@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+:root {
+  --font-family: "Raleway", sans-serif;
+  --font-footer: "Montserrat", sans-serif;
+  --color-texto: rgb(70, 70, 70);
+  --color-texto-hover: rgb(0, 0, 0);
+  --color-fondo: rgb(245, 245, 245);
+  --color-fondo-hover: rgb(221, 221, 221);
+  --color-fondo-section: rgb(234, 242, 253);
+  --color-white: rgb(255, 255, 255);
+  --color-blue: rgb(42, 122, 228);
+  --color-blue-hover: rgb(24 100 201);
+  --color-label: rgb(162, 162, 162);
+  --color-border-input: rgb(200, 200, 200);
+  --color-boton-cv: rgb(255, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+}
