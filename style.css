@@ -37,6 +37,41 @@ body {
   background-color: var(--color-fondo);
 }
 
+/* Menu */
+header.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+  }
+  
+  .menu__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .menu__list {
+    display: flex;
+    gap: 3.2rem;
+  }
+  
+  .menu__title{
+    color: aliceblue;
+  }
+  
+  .menu__title,
+  .skills__name,
+  .hobbies__name,
+  .menu__list-item:nth-last-child(1) a {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  
+  .menu__img{
+    content: url('#');
+  }
+
 /* Footer */
 footer.footer {
     display: flex;
