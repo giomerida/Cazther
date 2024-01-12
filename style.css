@@ -29,6 +29,122 @@ html {
   font-size: 62.5%;
 }
 
+section.about,
+section.academic,
+section.contacto {
+  background-color: var(--color-fondo-section);
+  background-image: url('#');
+  background-size: cover;
+  background-position: center;
+}
+
+img,
+svg,
+figure {
+  display: block;
+  max-width: 100%;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 5.2rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+.skills__title,
+.hobbies__title,
+.academic__title,
+.experience__title {
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+h3,
+.title__text--paragraph {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+a {
+  font-size: 1.6rem;
+  color: var(--color-texto);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.menu__listen {
+  color: aliceblue;
+}
+
+.menu__listen:after{
+  content: "";
+  display: block;
+  margin-left: 0;
+  background-color: var(--color-blue-hover);
+  height: 3px;
+  width: 0;
+  transition: 0.3s;
+}
+
+.menu__listen:hover:after{
+  width: 100%;
+}
+
+a:hover {
+  color: var(--color-fondo-hover);
+}
+
+.skills__icon,
+.hobbies__icon {
+  color: var(--color-blue);
+}
+
+header.menu,
+section.title,
+section.experience {
+  padding: 3.2rem 15.2rem;
+}
+
+section.about,
+section.contacto {
+  padding: 6.4rem 15.2rem;
+}
+
+section.skills {
+  padding: 3.2rem 15.2rem 8.8rem;
+}
+
+section.hobbies {
+  padding: 0 15.2rem 8.8rem;
+}
+
+section.academic {
+  padding: 8.2rem 15.2rem;
+}
+
 body {
   font-family: var(--font-family);
   font-size: 1.6rem;
@@ -69,7 +185,44 @@ header.menu {
   }
   
   .menu__img{
-    content: url('#');
+    content: url('assets/logo\ cazther.png');
+    max-width: 80px;
+  }
+
+  /* Title */
+.title__container {
+    display: grid;
+    grid-template-columns: auto minmax(auto, 36.8rem);
+    grid-template-areas: "description figure";
+    align-items: center;
+    gap: 1.7rem;
+  }
+  
+  .title__figure {
+    grid-area: figure;
+  }
+  
+  .title__description {
+    grid-area: description;
+  }
+  
+  .title__text--paragraph {
+    margin-top: 2.4rem;
+  }
+  
+  .title__network {
+    margin-top: 2.65rem;
+    display: flex;
+    gap: 3.2rem;
+  }
+  
+  .icon__link i{
+    font-size: 3rem;
+    padding-left: 10px;
+  }
+  
+  .icon__link i:hover{
+    color: var(--color-blue-hover);
   }
 
 /* Footer */
