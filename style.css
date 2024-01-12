@@ -36,3 +36,54 @@ body {
   color: var(--color-texto);
   background-color: var(--color-fondo);
 }
+
+/* Footer */
+footer.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    /*text-align: center;*/
+    width: 100%;
+    padding: 3.2rem;
+    background-color: #333333;
+  }
+  
+  .footer__text {
+    color: aliceblue;
+    font-family: var(--font-footer);
+  }
+  
+  .footer__contact{
+    padding: 10px;
+  }
+  
+  .footer__link i{
+    font-size: 2.8rem;
+    padding-left: 10px;
+    color: #ffffff;
+  }
+  
+  .footer__link i:hover{
+    color: var(--color-blue-hover);
+  }
+  
+  #btnScrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    background-color: var(--color-blue);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #btnScrollToTop:hover {
+    background-color: #0056b3;
+  }
